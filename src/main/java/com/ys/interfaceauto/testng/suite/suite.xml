@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!--
+运行结果：
+@BeforeSuite:suite整体套件运行开始
+@BeforeTest:suite每个测试类运行之前的方法
+登录测试
+@AfterTest:suit每个测试类运行之后的方法
+@BeforeTest:suite每个测试类运行之前的方法
+注册校验
+@AfterTest:suit每个测试类运行之后的方法
+@AfterSuite:suite整体套件运行结束
+-->
+<suite name="test">
+    <test name="login">
+        <classes>
+            <class name="com.ys.interfaceauto.testng.suite.SuiteConfig" />
+            <class name="com.ys.interfaceauto.testng.suite.LoginTest" />
+        </classes>
+    </test>
+    <test name="register">
+        <classes>
+            <class name="com.ys.interfaceauto.testng.suite.SuiteConfig" />
+            <class name="com.ys.interfaceauto.testng.suite.RegisterTest" />
+        </classes>
+    </test>
+</suite>
+
